@@ -101,23 +101,25 @@ export function Header() {
                     <HiMenuAlt3 className="text-[2rem] lg:hidden cursor-pointer" />
                 </SheetTrigger>
                 <SheetContent position={position} size="content">
-                    <SheetTitle className="flex mt-[-15px]">
+                    <SheetTitle className="flex mt-[-12px]">
                         <Link
                             href="/cart"
                             className="bg-[#F1F1F1] p-3 shadow items-center justify-center rounded-full relative cursor-pointer flex"
                         >
-                            <FiShoppingCart className="text-lg" />
-                            <Badge
-                                variant="destructive"
-                                className="absolute text-[8px] px-[6px] top-[-6px] right-0"
-                            >
-                                0
-                            </Badge>
+                            <SheetPrimitive.Close>
+                                <FiShoppingCart className="text-lg" />
+                                <Badge
+                                    variant="destructive"
+                                    className="absolute text-[8px] px-[6px] top-[-6px] right-0"
+                                >
+                                    0
+                                </Badge>
+                            </SheetPrimitive.Close>
                         </Link>
                     </SheetTitle>
                     <SheetHeader>
                         <SheetDescription>
-                            <ul className="font-bold flex flex-col items-center justify-start gap-6 mt-8 h-screen">
+                            <ul className="font-bold flex flex-col items-center justify-start gap-6 mt-6 h-screen">
                                 <Link href="/all-products">
                                     <SheetPrimitive.Close>
                                         <li className="cursor-pointer">All</li>
