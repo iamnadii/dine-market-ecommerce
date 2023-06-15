@@ -10,7 +10,7 @@ const Hero = () => {
                 <span className="bg-[#e1edff] text-blue-700 rounded px-4 py-2 font-bold">
                     Sale 70%
                 </span>
-                <h1 className="text-[2.8rem] md:text-[3.5rem] text-[#212121] font-semibold leading-[4rem]">
+                <h1 className="text-[2.5rem] md:text-[3.5rem] text-[#212121] font-semibold leading-[4rem]">
                     An Industrial Take on Streetwear
                 </h1>
                 <p className="text-[1rem] text=[#666]">

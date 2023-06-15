@@ -11,10 +11,10 @@ const Features = () => {
                     Unique and Authentic Vintage Designer Jewellery
                 </h2>
             </div>
-            <div className="grid grid-cols-1 gap-[27rem] sm:gap-[22rem] md:gap-[20rem] lg:grid-cols-2 lg:gap-20">
+            <div className="grid grid-cols-1 gap-[36rem] xxs:gap-[27rem] sm:gap-[20rem] md:gap-[20rem] lg:grid-cols-2 lg:gap-20">
                 <div className="relative mt-6">
                     <div className="z-[1]">
-                        <h2 className="text-[3.75rem] sm:text-[5rem] md:text-[6.875rem] font-extrabold absolute leading-[110px] opacity-10">
+                        <h2 className="text-[3.25rem] sm:text-[5rem] md:text-[6.875rem] font-extrabold absolute leading-[160px] sm:leading-[110px] opacity-10">
                             Different from others
                         </h2>
                     </div>

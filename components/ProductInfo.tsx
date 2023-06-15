@@ -9,6 +9,7 @@ import { FiShoppingCart } from 'react-icons/fi';
 import { FaCircle } from 'react-icons/fa';
 import { Separator } from './ui/separator';
 import { productData, productDataProp } from '@/lib/data';
+import CartCounter from './CartCounter';
 
 const ProductInfo = ({
     searchParams,
@@ -41,7 +42,7 @@ const ProductInfo = ({
                 </div>
                 <div className="flex flex-col items-start gap-10">
                     <div>
-                        <h2 className="text-3xl font-bold mb-2">
+                        <h2 className="text-2xl sm:text-3xl font-bold mb-2">
                             {toShowData[0].title}
                         </h2>
                         <span className="text-xl text-[#a3a3a3]">
@@ -69,13 +70,7 @@ const ProductInfo = ({
                     <div className="flex items-center gap-8">
                         <h2 className="text-xl font-bold">Quantity:</h2>
                         <div className="flex items-center gap-2">
-                            <Button className="rounded-full text-white bg-[#212121] ">
-                                -
-                            </Button>
-                            <span className="font-bold text-2xl">0</span>
-                            <Button className="rounded-full text-white bg-[#212121]">
-                                +
-                            </Button>
+                            <CartCounter quantity={toShowData[0].quantity} />
                         </div>
                     </div>
                     <div className="flex md:items-center items-start gap-4 flex-col-reverse sm:flex-row">
@@ -93,7 +88,7 @@ const ProductInfo = ({
             </div>
             <div className="my-24">
                 <div className="relative">
-                    <h2 className="text-[3.5rem] sm:text-[5rem] md:text-[6.875rem] font-extrabold absolute leading-[110px] opacity-10 z-[1]">
+                    <h2 className="text-[3rem] xxs:text-[3.75rem] sm:text-[5rem] md:text-[6.875rem] font-extrabold absolute leading-[110px] opacity-10 z-[1]">
                         Overview
                     </h2>
                     <h3 className="text-3xl text-[#212121] font-bold pt-8">

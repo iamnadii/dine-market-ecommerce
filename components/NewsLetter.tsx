@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 const NewsLetter = () => {
     return (
         <section className="mt-28 py-10 flex flex-col items-center justify-center text-center sm:text-left gap-4 relative">
-            <h2 className="text-[3.5rem] sm:text-[5rem] md:text-[6.875rem] font-extrabold absolute leading-[110px] opacity-10 z-[1]">
+            <h2 className="text-[3rem] sm:text-[5rem] md:text-[6.875rem] font-extrabold absolute leading-[110px] opacity-10 z-[1]">
                 Newsletter
             </h2>
             <h3 className="text-[2rem] text-[#212121] font-bold">

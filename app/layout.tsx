@@ -2,6 +2,7 @@ import './globals.css';
 import { Sora } from 'next/font/google';
 import Footer from '@/components/Footer';
 import { Header } from '@/components/Header';
+import { Providers } from './redux/provider';
 
 const inter = Sora({ subsets: ['latin'] });
 
@@ -17,13 +18,15 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={`${inter.className}`}>
-                <div className="container scroll-smooth">
-                    <Header />
-                    {children}
-                </div>
-                <Footer />
-            </body>
+            <Providers>
+                <body className={`${inter.className}`}>
+                    <div className="container scroll-smooth">
+                        <Header />
+                        {children}
+                    </div>
+                    <Footer />
+                </body>
+            </Providers>
         </html>
     );
 }

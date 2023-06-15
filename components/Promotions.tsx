@@ -12,13 +12,13 @@ const Promotions = () => {
                 </h2>
             </div>
             <div className="flex gap-5 xl:flex-row flex-col">
-                <div className="flex flex-col gap-5 flex-wrap flex-auto">
+                <div className="flex flex-col gap-5 flex-wrap flex-1 sm:flex-auto">
                     <div className="bg-[#D6D6D8] text-[#212121] flex flex-wrap text-center sm:text-left items-center justify-center sm:justify-between pt-3 sm:px-6">
                         <div>
-                            <h3 className="uppercase font-bold text-[1.75rem]">
+                            <h3 className="uppercase font-bold text-[1.5rem] sm:text-[1.75rem]">
                                 Get upto 60%
                             </h3>
-                            <p className="text-[1.10rem]">
+                            <p className="text-[1rem] sm:text-[1.10rem]">
                                 For the summer season
                             </p>
                         </div>
@@ -29,8 +29,8 @@ const Promotions = () => {
                             height={250}
                         />
                     </div>
-                    <div className="bg-[#212121] uppercase text-[#fff] px-6 flex flex-col items-center justify-center gap-2 py-20 sm:py-8">
-                        <h3 className="font-bold text-[1.75rem]">
+                    <div className="bg-[#212121] uppercase text-[#fff] px-1 sm:px-6 flex flex-col items-center justify-center gap-2 py-20 sm:py-8">
+                        <h3 className="font-bold text-[1.5rem] sm:text-[1.75rem]">
                             Get 30% off
                         </h3>
                         <p className="text-[1rem]">Use promo code</p>
@@ -39,7 +39,7 @@ const Promotions = () => {
                         </Button>
                     </div>
                 </div>
-                <div className="flex gap-5 flex-[2.5] flex-col sm:flex-row">
+                <div className="flex gap-5 flex-[1] sm:flex-[2.5] flex-col sm:flex-row">
                     <div className="bg-[#EFE1C7] px-4 pt-6 flex-auto flex flex-col justify-center items-center sm:items-start">
                         <div className="text-left">
                             <h4>Flex Sweatshirt</h4>
