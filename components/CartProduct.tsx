@@ -29,9 +29,7 @@ const CartProduct = ({ product }: { product: productDataProp }) => {
                         <p className="text-xl font-bold">
                             ${+product.price * product.quantity}
                         </p>
-                        <div className="flex items-center gap-2">
-                            <CartCounter quantity={product.quantity} />
-                        </div>
+                        <CartCounter quantity={product.quantity} />
                     </div>
                 </div>
             </div>

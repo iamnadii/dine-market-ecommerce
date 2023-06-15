@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 const CartCounter = ({ quantity }: { quantity: number }) => {
     const [counter, setCounter] = useState<number>(quantity);
     return (
-        <>
+        <div className="flex items-center gap-2">
             <Button
                 className="rounded-full text-white bg-[#212121] hover:text-white hover:bg-[#212121]"
                 onClick={() =>
@@ -25,8 +25,7 @@ const CartCounter = ({ quantity }: { quantity: number }) => {
             >
                 +
             </Button>
-            ;
-        </>
+        </div>
     );
 };
 

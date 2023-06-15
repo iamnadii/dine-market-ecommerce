@@ -69,9 +69,7 @@ const ProductInfo = ({
                     </div>
                     <div className="flex items-center gap-8">
                         <h2 className="text-xl font-bold">Quantity:</h2>
-                        <div className="flex items-center gap-2">
-                            <CartCounter quantity={toShowData[0].quantity} />
-                        </div>
+                        <CartCounter quantity={toShowData[0].quantity} />
                     </div>
                     <div className="flex md:items-center items-start gap-4 flex-col-reverse sm:flex-row">
                         <Link href="/cart">
