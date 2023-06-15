@@ -7,10 +7,7 @@ import { productDataProp } from '@/lib/data';
 const CartProduct = ({ product }: { product: productDataProp }) => {
     return (
         <>
-            <div
-                className="flex flex-col md:flex-row gap-10 items-start"
-                key={product.id}
-            >
+            <div className="flex flex-col md:flex-row gap-10 items-start">
                 <div className="w-full md:w-[24%] lg:w-[22%] xl:w-[20%]">
                     <Image
                         src={`/assets/images/${product.image}.png`}

@@ -19,7 +19,9 @@ const AddToCart = ({ products }: { products: productDataProp[] }) => {
             <div className="flex justify-between gap-2 flex-col lg:flex-row">
                 <div className="flex-[3] flex flex-col gap-8">
                     {products.map((product: productDataProp) => {
-                        return <CartProduct product={product} />;
+                        return (
+                            <CartProduct product={product} key={product.id} />
+                        );
                     })}
                 </div>
                 <Separator className="my-10 bg-[#212121] block lg:hidden" />
